@@ -14,15 +14,15 @@ const Herosection = () => {
                     <div className='bg-green-500 shadow-2xl rounded-full w-full text-center'>
                         <div className='grid grid-cols-3 p-4 xl:p-6 bg-white rounded-2xl'>
                             <div className=''>
-                                <h1 className='xl:text-7xl font-bold text-sky-900'>10</h1>
+                                <h1 className='xl:text-6xl font-bold text-sky-900'>10</h1>
                                 <h1 className='font-base text-center shadow-xl p-2 xl:text-2xl'>Kamar</h1>
                             </div>
                             <div className=''>
-                            <h1 className='xl:text-7xl font-bold text-sky-900'>12</h1>
+                            <h1 className='xl:text-6xl font-bold text-sky-900'>12</h1>
                                 <h1 className='font-base text-center shadow-xl p-2 xl:text-2xl'>Penghuni</h1>
                             </div>
                             <div className=''>
-                            <h1 className='xl:text-7xl font-bold text-sky-900'>350K++</h1>
+                            <h1 className='xl:text-6xl font-bold text-sky-900'>350K++</h1>
                                 <h1 className='font-base text-center shadow-xl p-2 xl:text-2xl'>Price</h1>
                             </div>
                         </div>

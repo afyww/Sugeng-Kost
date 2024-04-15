@@ -21,15 +21,15 @@ export default function Home() {
       <Navbar />
       <div className="w-full">
           <Herosection />
-          <Rulessection />
           <Aboutsection />
+          {/* <Rulessection />
           <Pricesection />
           <Contactsection />
           <Facilitiessection />
-          <Locationsection />
+          <Locationsection /> */}
       </div>
       <div>
-        <Footersection />
+        {/* <Footersection /> */}
       </div>
     </main>
   );

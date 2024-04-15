@@ -14,20 +14,22 @@ const Navbar = () => {
     return (
         <section>
             <div className=''></div>
-            <nav className="fixed rounded-b-3xl z-50 bg-white top-0 p-3 right-0 left-0 mx-auto">
+            <nav className="fixed z-50 shadow-xl bg-white top-0 p-1 xl:p-3 right-8 left-8 mx-auto rounded-xl">
                 <div className="mx-0 xl:mx-7 px-4">
                     <div className="flex justify-between">
                         <div>
                             <a href="/" className="flex items-center py-4 px-3 text-black">
-                                <span className="font-extrabold text-black font-sans text-4xl">Sugeng Kost</span>
+                                <span className="text-2xl xl:text-4xl font-semibold font-sans text-left text-sky-900">Sugeng Kost</span>
                             </a>
                         </div>
                         <div className="hidden items-center md:flex xl:flex text-black">
-                            <a href="#home" onClick={closeMobileMenu} className="px-5 text-xl font-base hover:underline">Home</a>
-                            <a href="#about" onClick={closeMobileMenu} className="px-5 text-xl font-base hover:underline">About</a>
-                            <a href="#contact" onClick={closeMobileMenu} className="px-5 text-xl font-base hover:underline">Contact</a>
-                            <a href="#location" onClick={closeMobileMenu} className="px-5 text-xl font-base hover:underline">Location</a>
-                            <a href="" onClick={closeMobileMenu} className="px-5 bg-black text-xl font-base hover:underline p-2 rounded-xl text-white">Daftar/Masuk</a>
+                            <a href="#home" onClick={closeMobileMenu} className="px-5 text-xl text-black font-normal hover:underline">Home</a>
+                            <a href="#about" onClick={closeMobileMenu} className="px-5 text-xl text-black font-normal hover:underline">Rooms</a>
+                            <a href="#contact" onClick={closeMobileMenu} className="px-5 text-xl text-black font-normal hover:underline">Contact</a>
+                        </div>
+                        <div className='my-auto hidden xl:flex'>
+                            <a href="" onClick={closeMobileMenu} className="px-5 bg-sky-800 text-xl font-base hover:underline p-2 rounded-xl text-white">Daftar/Masuk</a>
+
                         </div>
                         <div className="md:hidden flex items-center">
                             <button className="mobile-menu-button" onClick={toggleMobileMenu}>
@@ -43,10 +45,9 @@ const Navbar = () => {
 
                 <div className={`mobile-menu md:hidden xl:hidden text-black ${isMobileMenuOpen ? '' : 'hidden'}`}>
                     <a href="#home" onClick={closeMobileMenu} className="block py-3 px-5 text-sm hover:bg-black rounded-xl">Home</a>
-                    <a href="#about" onClick={closeMobileMenu} className="block py-3 px-5 text-sm hover:bg-black rounded-xl">About</a>
+                    <a href="#about" onClick={closeMobileMenu} className="block py-3 px-5 text-sm hover:bg-black rounded-xl">Rooms</a>
                     <a href="#contact" onClick={closeMobileMenu} className="block py-3 px-5 text-sm hover:bg-black rounded-xl">Contact</a>
-                    <a href="#location" onClick={closeMobileMenu} className="block py-3 px-5 text-sm hover:bg-black rounded-xl">Location</a>
-                    <a href="" onClick={closeMobileMenu} className="block bg-black text-center text-sm p-2 rounded-xl text-white">Daftar/Masuk</a>
+                    <a href="" onClick={closeMobileMenu} className="block bg-sky-800 text-center text-sm p-2 rounded-xl text-white">Daftar/Masuk</a>
                 </div>
             </nav>
         </section>
